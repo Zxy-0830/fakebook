@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Xiyu Zhou">
+  <title>Fakebook</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/favicon.png?v=2" type="image/png">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="./assets/js/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Fakebook</div>
+    <nav>
+      <ul>
+        <li><a href="#">Friends</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Groups</a></li>
+        <li><a href="#">My ads</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+    <div class="user-info" id="userInfoBtn">
+      <figure>
+        <img src="../Xiyu _Zhou_assignment-04/assets/media/image-01.jpg" alt="User Avatar">
+      </figure>
+    </div>
+    <div class="popup" id="popup">
+      <div class="pop" id="pop">
+        <div id="userInfoContent"></div>
+        <button id="close">close</button>
+      </div>
+    </div>
+    
+  </header>
+  <main>
+    <form id="postForm">
+      <textarea id="postText" placeholder="What's new, John?"></textarea>
+      <label for="postImage" id="labelImage">
+        <i class="fa-solid fa-image"></i>
+        <span id="fileName"></span>
+      </label>
+      <input type="file" id="postImage" accept="image/*" />
+      <button type="submit" id="submit">Post</button>
+    </form>
+    
+    <section id="postsSection">
+    </section>
+  </main>
+</body>
+</html>
